@@ -34,12 +34,14 @@ You can setup the project by either download the code as a `.zip` folder or clon
 Run the following command or paste it in the GitHub CLI.
 ```bash
 gh repo clone IAmRiteshKoushik/isro-redesign
+# Don't forget to edit the username and repo name as per your fork of the project.
 ```
 
 ### Use Terminal Emulator (.git)
 Run the following command or paste it in your terminal to clone the repository. For contributing, you can create your own fork of the repo and run the same command. Contribution docs are coming soon. 
 ```bash
 git clone https://github.com/IAmRiteshKoushik/isro-redesign
+# Don't forget to edit the clone link as per your fork of the project.
 ```
 <!-- ### GitHub Desktop -->
 <!-- To Be Updated -->
