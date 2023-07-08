@@ -138,6 +138,7 @@ body {
     padding: 30px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: cyan;
@@ -147,6 +148,7 @@ body {
     padding: 30px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #000;
@@ -169,6 +171,75 @@ body {
     font-weight: 800;
 }
 
+/* Launch Sequence Section */
+.launch-content{
+    display: flex;
+}
+
+/* ISRO Portals */
+.portals .row-1, .portals .row-2{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.portal {
+    border: 3px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.portal:hover{
+    border: 3px solid cyan;
+}
+
+.portal > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.portal > span > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+/* ISRO Centers and Units */
+.centers > .row-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ISRO Autonomous Units */
+.autonomous-units > .row-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.autonomous-units .row-2 .portal{
+    border: 3px solid #000;
+}
+
+.autonomous-units .row-2 .portal span a{
+    color: #000;
+}
+
+
+
 /* Partners */
 .partners{
     display: flex;
@@ -184,6 +255,10 @@ body {
 .carousel .startup-box:nth-child(2){
     margin-left: 100px;
     margin-right: 100px;
+}
+
+.startup-box img{
+    cursor: pointer;
 }
 
 /* Footer */
