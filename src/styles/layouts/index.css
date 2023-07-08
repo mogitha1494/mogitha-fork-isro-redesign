@@ -75,18 +75,16 @@ body {
     display: flex;
     color: #fff;
     width: 100%;
-
+    margin-bottom: 40px;
 }
 
 .hero-section .hero-content{
-    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-left: 10%;
 }
-
 
 .hero-content span:first-child{
     font-size: 72px;
@@ -125,7 +123,6 @@ body {
 }
 
 .hero-section .hero-image{
-    /* border: 1px solid #fff; */
     margin-left: 20%;
 }
 
@@ -135,21 +132,58 @@ body {
     border-radius: 50%;
 }
 
-/* Space Tech Partners */
-.partners{
+/* General section style */
+
+.section:nth-of-type(odd) {
     padding: 30px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: cyan;
 }
 
-.partners .header {
+.section:nth-of-type(even) {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+/* General header style */
+.header-black{
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.header-white{
     width: 100%;
     text-align: center;
     color: #fff;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 800;
+}
+
+/* Partners */
+.partners{
+    display: flex;
+    flex-direction: column;
+}
+.partners .carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel .startup-box:nth-child(2){
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* Footer */
