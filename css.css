@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.ka{
+    padding-left: 355px;
+    padding-bottom: 240px;
+    padding-top: 300px;
+    background-image:url('wallpaperflare.com_wallpaper.jpg'); 
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+   
+}
+.ja{
+    padding-left: 145px;
+    padding-bottom: 350px;
+    padding-top: 300px;
+    background-image:url('ins.jpg'); 
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.j{
+    background-image:url('wallpaperflare.com_wallpaper\ \(3\).jpg');
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.container{
+   
+    padding:20px 8%;
+    padding-bottom: 120px;
+}
+.cont{
+    
+    padding:1px 8%;
+    padding-bottom: 57px;
+   
+}
+
+h2{
+    color: aliceblue;
+}
+
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:30px;
+}
+.cont .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:30px;
+}
+
+.container .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 8px;
+  
+    border: 1px solid white;
+    text-align: center;
+    padding:30px 30px;
+}
+.cont .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+  
+    border: 1px solid white;
+    text-align: center;
+    padding:30px 30px;
+}
+.container .box-container .box h2{
+    color:#fff;
+    font-size: 30px;
+    padding:5px 0;
+}
+.cont .box-container .box h2{
+    color:#fff;
+    font-size: 30px;
+    padding:5px 0;
+}
+
+.container .box-container .box h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+.cont .box-container .box h3{
+    color:#fff;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.container .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+.cont .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container .box-container .box .btn:hover{
+    letter-spacing: 1px;
+    transform: scale(1.03);
+   
+}
+.cont .box-container .box .btn:hover{
+    letter-spacing: 1px;
+    transform: scale(1.03);
+}
+
+.container .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,2,.9);
+    transform: scale(1.03);
+}
+.cont .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,2,.9);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}

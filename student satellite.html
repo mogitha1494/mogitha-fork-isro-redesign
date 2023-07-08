@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+body{
+    font-family: 'roboto', sans-serif;
+    color: #454545;
+    font-weight: 400;
+    background-image: url(m3.jpg);
+}
+
+.container{
+    width: 100%;
+    padding-right:15px ;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.column{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.section-title{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 45px 0 30px 0;
+}
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background: #eeeeee;
+}
+.effect{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.effect .effect-img{
+    font-size: 0;
+    overflow: hidden;
+}
+.effect .effect-img img{
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+}
+.effect:hover .effect-img img{
+    transform: scale(1.2);
+}
+.effect .effect-text{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transition: all .3s ease-in;
+    opacity: 0;
+}
+.effect .effect-text .inner{
+    position: absolute;
+    padding: 15px;
+    z-index: 1;
+}
+.effect .effect-text:before,
+.effect .effect-text:after{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0;
+    content: '';
+}
+.effect .effect-text:before{
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    left: -100%;
+    top: 0;
+}
+.effect .effect-text:after{
+    border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    left: 100%;
+    bottom: 0;
+}
+.effect:hover .effect-text{
+    opacity: 1;
+}
+.effect:hover .effect-text:after,
+.effect:hover .effect-text:before{
+    animation-delay: .1s;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.effect:hover .effect-text:after{
+    animation-name: left-up;
+}
+.effect:hover .effect-text:before{
+    animation-name: right-dn;
+}
+
+
+
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+    .column{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    .column{
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}  
+@-webkit-keyframes left-up {
+    0% {
+        left: 100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+@-webkit-keyframes right-dn {
+    0% {
+        left: -100%;
+        height: 0;
+    }
+    50% {
+        left: 0;
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        left: 0;
+    }
+}
+body{
+    background-image: url(stu\ satellite.jpg);
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+   }
+   table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 0 auto;
+    }
+    table{
+        border: 1px solid ;
+        border-radius: 2px;
+        box-shadow:0 0 .2rem #fff,
+                           0 0 .2rem white,
+                           0 0 1.9rem white,
+                           0 0 0.2rem white,
+                           0 0 1.4rem white,
+                           inset 0 0 1.1rem white;
+    }
+    thead,th{
+        
+        border-bottom:1px solid white ;
+        
+    }
+    th, td {
+      border: 1px solid none;
+      padding: 8px;
+      text-align: center;
+    }
+    .title{
+       padding-left: 240px;
+       padding-top: 50px;
+    }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+            <svg width="632" height="47" viewBox="0 0 632 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.76 22.32V5.168L8.184 0.879997H23.096L30.52 5.168V11.76H24.12V6.64H7.16V20.208H23.096L30.52 24.496V42.032L23.096 46.32H7.544L0.12 42.032V35.44H6.52V40.56H24.12V26.608H8.184L0.76 22.32ZM57.306 6.96V46H50.906V6.96H38.17V1.2H70.042V6.96H57.306ZM104.898 1.2H111.298V42.032L103.874 46.32H85.1215L77.6975 42.032V1.2H84.0975V39.92H104.898V1.2ZM156.423 41.712L148.999 46H122.823V1.2H148.999L156.423 5.488V41.712ZM129.223 6.96V40.24H150.023V6.96H129.223ZM174.348 25.84V40.24H193.484V46H167.948V1.2H193.484V6.96H174.348V20.08H189.644V25.84H174.348ZM208.848 12.144V46H202.448V1.2H208.272L231.44 35.056H231.568V1.2H237.968V46H232.144L208.976 12.144H208.848ZM264.806 6.96V46H258.406V6.96H245.67V1.2H277.542V6.96H264.806ZM301.823 22.32V5.168L309.247 0.879997H324.159L331.583 5.168V11.76H325.183V6.64H308.223V20.208H324.159L331.583 24.496V42.032L324.159 46.32H308.607L301.183 42.032V35.44H307.583V40.56H325.183V26.608H309.247L301.823 22.32ZM362.529 1.2L378.529 46H372.257L368.481 35.376H348.641L344.865 46H338.593L354.593 1.2H362.529ZM358.497 7.536L350.689 29.616H366.433L358.625 7.536H358.497ZM397.681 6.96V46H391.281V6.96H378.545V1.2H410.417V6.96H397.681ZM424.473 25.84V40.24H443.609V46H418.073V1.2H443.609V6.96H424.473V20.08H439.769V25.84H424.473ZM452.573 46V1.2H458.973V40.24H475.549V46H452.573ZM483.198 46V1.2H489.598V40.24H506.174V46H483.198ZM513.823 46V1.2H520.223V46H513.823ZM547.056 6.96V46H540.656V6.96H527.92V1.2H559.792V6.96H547.056ZM573.848 25.84V40.24H592.984V46H567.448V1.2H592.984V6.96H573.848V20.08H589.144V25.84H573.848ZM601.948 22.32V5.168L609.372 0.879997H624.284L631.708 5.168V11.76H625.308V6.64H608.348V20.208H624.284L631.708 24.496V42.032L624.284 46.32H608.732L601.308 42.032V35.44H607.708V40.56H625.308V26.608H609.372L601.948 22.32Z" fill="white"/>
+                </svg>
+            </div>  
+        <div class="section-title">
+           
+                
+        </div>
+            
+    
+            <div class="row">
+    
+                <div class="column">
+                    
+                    <div class="effect">
+                        <div class="effect-img">
+                            <img src="NIUSAT.jpg.webp" alt="">
+                        </div>
+                        <div class="effect-text">
+                            <div class="inner">
+                                <h2>NIUSAT</h2>
+                                <p>NIUSAT is an Indian University/Academic Institute satellite from Noorul Isalm University in Tamil Nadu State, launched by PSLV-C38.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="effect">
+                        <div class="effect-img">
+                            <img src="KALAMSAT.jpg.webp" alt="">
+                        </div>
+                        <div class="effect-text">
+                            <div class="inner">
+                                <h2>KALAMSAT</h2>
+                                <p>Kalamsat-V2, a student payload is first to use fourth stage (PS4) of the PSLV as an orbital platform. The satellite was taken to its designated orbit by PSLV-C44.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="column">
+                    <div class="effect">
+                        <div class="effect-img">
+                            <img src="INSPIRESAT.jpg.webp" alt="">
+                        </div>
+                        <div class="effect-text">
+                            <div class="inner">
+                                <h2>INSPIRESAT</h2>
+                                <p>INSPIREsat-1 from Indian Institute of Space Science & Technology (IIST) in association with Laboratory of Atmospheric & Space Physics at University of Colorado, Boulder</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sl.No.</th>
+        <th>Satellite Name</th>
+        <th>Launch Date</th>
+        <th>Launch Mass</th>
+        <th>Launch Vehicle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>ANUSAT</td>
+        <td>Apr 20,2009</td>
+        <td>40 kg</td>
+        <td>PSLV-C12 / RISAT-2</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>STUDSAT</td>
+        <td>Jul 12, 2010</td>
+        <td>Less than 1 kg</td>
+        <td>PSLV-C15/CARTOSAT-2B</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Jugnu</td>
+        <td>Oct 12, 2011</td>
+        <td>3 kg</td>
+        <td>PSLV-C18/Megha-Tropiques</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>SRMSat</td>
+        <td>Oct 12, 2011</td>
+        <td>10.9 kg</td>
+        <td>PSLV-C18/Megha-Tropiques</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>SWAYAM</td>
+        <td>Jun 22, 2016</td>
+        <td>1kg</td>
+        <td>PSLV-C34 / CARTOSAT-2 Series Satellite</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>SATHYABAMASAT</td>
+        <td>Jun 22, 2016</td>
+        <td>1.5 kg</td>
+        <td>PSLV-C34 / CARTOSAT-2 Series Satellite</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>PISAT</td>
+        <td>Sep 26, 2016</td>
+        <td>5.25 kg</td>
+        <td>PSLV-C35 / SCATSAT-1</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>PRATHAM</td>
+        <td>Sep 26, 2016</td>
+        <td>10 kg</td>
+        <td>PSLV-C35 / SCATSAT-1</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>NIUSAT</td>
+        <td>Jun 23, 2017</td>
+        <td>15 kg</td>
+        <td>PSLV-C38 / Cartosat-2 Series Satellite</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Kalamsat</td>
+        <td>Jan 24, 2019</td>
+        <td>1.26 kg</td>
+        <td>PSLV-C44</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Satish Dhawan SAT (SDSAT)</td>
+        <td>Feb 28, 2021</td>
+        <td></td>
+        <td>PSLV-C51/Amazonia-1</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>UNITYsat</td>
+        <td>Feb 28, 2021</td>
+        <td></td>
+        <td>PSLV-C51/Amazonia-1</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>INSPIREsat-1</td>
+        <td>Feb 14, 2022</td>
+        <td></td>
+        <td>PSLV-C52/EOS-04 Mission</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>AzaadiSAT</td>
+        <td>Aug 7, 2022</td>
+        <td></td>
+        <td>SSLV-D1/EOS-02</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>AzaadiSAT-2</td>
+        <td>Feb 10, 2023</td>
+        <td></td>
+        <td>SSLV-D2/EOS-07 Mission</td>
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+</html>
