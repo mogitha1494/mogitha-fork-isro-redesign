@@ -57,5 +57,5 @@ The following are the core maintainers of the project:
 1. [Ritesh Koushik](https://github.com/IAmRiteshKoushik)
 2. [Nalan Krishna V](https://github.com/nalankrishnav)
 3. [Harini Priyanka](https://github.com/Prxyankaz)
-4. [Mogitha M](https://github.com/Prxyankaz)
+4. [Mogitha S M](https://github.com/mogitha1494)
 
