@@ -56,6 +56,6 @@ The project is under the MIT License. Read licensing document [here](./LICENSE.m
 The following are the core maintainers of the project:
 1. [Ritesh Koushik](https://github.com/IAmRiteshKoushik)
 2. [Nalan Krishna V](https://github.com/nalankrishnav)
-3. [Harini Priyanka](https://github.com/Prxyankaz)
+3. [Harini Priyanka W](https://github.com/Prxyankaz)
 4. [Mogitha S M](https://github.com/mogitha1494)
 
